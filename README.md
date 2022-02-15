@@ -24,4 +24,4 @@ To what extent do holidays in European cities and temperature in European cities
 
 **Conceptual model**
 
-![image](https://user-images.githubusercontent.com/98961407/154055860-36ba9fd9-2df6-433e-bb87-6596bde620a7.png)
+![image](https://user-images.githubusercontent.com/98961407/154074601-52ba977f-347f-4768-951f-4f902654b9b6.png)
