@@ -17,7 +17,7 @@ transform and reshape the data into the right format, and
 address a research question and/or business problem using some of the building blocks (e.g., regression, apps, “deployment”).
 
 
-**Research question**
+**Research question** 
 
 To what extent do holidays in European cities and temperature in European cities effect AirBNB prices in European cities and to what extent does the temperature in influence the effect of holidays on AirBNB prices? 
 
