@@ -19,5 +19,7 @@ address a research question and/or business problem using some of the building b
 **Research question**
 To what extent do holidays in European cities and temperature in European cities effect AirBNB prices in European cities and to what extent does the temperature in influence the effect of holidays on AirBNB prices? 
 
+
 **Conceptual model**
+
 ![image](https://user-images.githubusercontent.com/98961407/154055860-36ba9fd9-2df6-433e-bb87-6596bde620a7.png)
