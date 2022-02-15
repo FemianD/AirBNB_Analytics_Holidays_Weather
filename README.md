@@ -15,3 +15,9 @@ it should download the (raw) data directly from its source,
 explore the raw data files with RMarkdown documents rendered as PDF or HTML files,
 transform and reshape the data into the right format, and
 address a research question and/or business problem using some of the building blocks (e.g., regression, apps, “deployment”).
+
+**Research question**
+To what extent do holidays in European cities and temperature in European cities effect AirBNB prices in European cities and to what extent does the temperature in influence the effect of holidays on AirBNB prices? 
+
+**Conceptual model**
+![image](https://user-images.githubusercontent.com/98961407/154055860-36ba9fd9-2df6-433e-bb87-6596bde620a7.png)
