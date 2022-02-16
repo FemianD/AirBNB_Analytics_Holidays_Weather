@@ -29,4 +29,6 @@ To what extent do holidays in European cities and temperature in European cities
 ## Holiday API
 Data we can use: There are no dates for cities specific. The holiday API generates lists of public holidays observances for countries, states and provinces. We can select the European countries.
 There is a GitHub community on the holiday API: https://github.com/matbmeijer/HolidayAPI 
+What we can do is to select the regions in which the city is located and use that holiday data. Makes it more interesting and easier. 
+
 
