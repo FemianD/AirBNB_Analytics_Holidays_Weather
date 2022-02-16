@@ -25,3 +25,8 @@ To what extent do holidays in European cities and temperature in European cities
 **Conceptual model**
 
 ![image](https://user-images.githubusercontent.com/98961407/154074601-52ba977f-347f-4768-951f-4f902654b9b6.png)
+
+##Holiday API
+Data we can use: There are no dates for cities specific. The holiday API generates lists of public holidays observances for countries, states and provinces. We can select the European countries.
+There is a GitHub community on the holiday API: https://github.com/matbmeijer/HolidayAPI 
+
