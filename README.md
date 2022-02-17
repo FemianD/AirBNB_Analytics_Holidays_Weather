@@ -31,9 +31,7 @@ The best research method for the previously formulated research question is the 
 
 The goal of the research is to define the best way to calculate AirBNB prices based on holidays and temperature. To define the price, data is collected in 2 different stages. First primary data from AirBNB is used to calculate prices during a period. Secondly data is coupled with secondary data to analyse the findings. 
 
-The finding will be analysed using a Conjoint analysis. A conjoint analysis is a multivariate dependence techniques specifically developed to      
-
-pecifically developed to understand how respondents develop preferences for any type of product or service. A conjoint analysis gives the opportunity to research the effect of multiple dependent variables on the independent variables and can show the effect of a moderator on the relationship between dependent variables and independent variables. These properties makes the conjoint analysis relevant for this research question with a quasi moderator. 
+These findings will be analysed using a Conjoint analysis. A conjoint analysis is a multivariate dependence technique specifically developed to understand how respondents develop preferences for any type of product or service. A conjoint analysis raises the opportunity to research the effect of multiple dependent variables on the independent variables and can show the effect of a moderator on the relationship between dependent variable and independent variable. These properties makes the conjoint analysis relevant for this research question with a quasi-moderator. 
 
 ## Holiday API
 Data we can use: There are no dates for cities specific. The holiday API generates lists of public holidays observances for countries, states and provinces. We can select the European countries.
