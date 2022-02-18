@@ -1,20 +1,5 @@
-# Team4
+# AirBNB analytics
 
-Scope:
-Define a research question and prepare the airbnb data for analysis + automation.
-
-Goals team assignment:
-
--> Set up a reproducible workflow on GitHub,
--> Apply the end-to-end Git workflow for versioning files, and manage your project using GitHub Issues, and
--> Build and automate a data preparation and analysis pipeline from scratch.
-
-Deliverables
-
-it should download the (raw) data directly from its source,
-explore the raw data files with RMarkdown documents rendered as PDF or HTML files,
-transform and reshape the data into the right format, and
-address a research question and/or business problem using some of the building blocks (e.g., regression, apps, “deployment”).
 
 
 ## Research question
@@ -32,6 +17,11 @@ The best research method for the previously formulated research question is the 
 The goal of the research is to define the best way to calculate AirBNB prices based on holidays and temperature. To define the price, data is collected in 2 different stages. First primary data from AirBNB is used to calculate prices during a period. Secondly data is coupled with secondary data to analyse the findings. 
 
 These findings will be analysed using a Conjoint analysis. A conjoint analysis is a multivariate dependence technique specifically developed to understand how respondents develop preferences for any type of product or service. A conjoint analysis raises the opportunity to research the effect of multiple dependent variables on the independent variables and can show the effect of a moderator on the relationship between dependent variable and independent variable. These properties makes the conjoint analysis relevant for this research question with a quasi-moderator. 
+
+## Stakeholders
+Users of airBNB can use the information gathered by answering the research to anticipate price flunctuations.
+Tourism sector can track to what extent tourism through airbnb affects prizing. 
+Goverments can track activity of rented airbnb's in the city.
 
 ## Which Inside AirBNB data do we need?
 For every European city we need from Airbnb the calendar data. The dataset contains information about the price, dates and host-id. There will be archived data used, because this will be more relevant with the temperature API. The files from March 5th qualify best for answering the research question. The name of the file exactly is: calendar.csv.gz 
