@@ -12,11 +12,12 @@ To what extent do holidays in European cities and temperature in European cities
 ![image](https://user-images.githubusercontent.com/98961407/154074601-52ba977f-347f-4768-951f-4f902654b9b6.png)
 
 ## Research method 
-The best research method for the previously formulated research question is the conjoint analysis.  
+The best research method for the previously formulated research question is multiple regression.
 
-The goal of the research is to define the best way to calculate AirBNB prices based on holidays and temperature. To define the price, data is collected in 2 different stages. First primary data from AirBNB is used to calculate prices during a period. Secondly data is coupled with secondary data to analyse the findings. 
+Multiple regression is an appropriate method of analysis when the research problem involves a single metric dependent variable (AirBNB prices). This dependant variable is related to two more independent variables (temperature, holiday period). Regression analysis is a statistical tool that should be used when the DV and IV variables are metric.  The non-metric holiday data will be transformed into a dummy variable. Under these circumstances it is possible to include the nonmetric holiday data in the analysis.
 
-These findings will be analysed using a Conjoint analysis. A conjoint analysis is a multivariate dependence technique specifically developed to understand how respondents develop preferences for any type of product or service. A conjoint analysis raises the opportunity to research the effect of multiple dependent variables on the independent variables and can show the effect of a moderator on the relationship between dependent variable and independent variable. These properties makes the conjoint analysis relevant for this research question with a quasi-moderator. 
+The goal of the research is to define the best way to calculate AirBNB prices based on holidays and temperature. To define the price, data is collected in 2 different stages. First the primary data from Inside AirBNB is used to calculate prices during a period. Secondly data is coupled with secondary data to analyse the findings and answer the research question.
+
 
 ## Research deployment
 To visualize the effect of holidays and temperature on prices, there is a dashboard that shows different statistics. Within this dashboard, users can filter different countries and cities and select temperature levels so check the average airBNB price for certain cities.  
