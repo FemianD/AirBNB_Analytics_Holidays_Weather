@@ -15,6 +15,11 @@ To what extent do holidays in European cities and temperature in European cities
 
 ![image](https://user-images.githubusercontent.com/98961407/154074601-52ba977f-347f-4768-951f-4f902654b9b6.png)
 
+
+<p align="center" width="100%">
+    <img width="50%" src="https://media.giphy.com/media/crE4vQd8NVFP7NTBb8/giphy.gif">
+</p>
+
 ## Research method 
 The best research method for the previously formulated research question is multiple regression.
 
