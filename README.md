@@ -31,8 +31,7 @@ Goverments can track activity of rented airbnb's in the city.
 For every European city we need from Airbnb the calendar data. The dataset contains information about the price, dates and host-id. There will be archived data used, because this will be more relevant with the temperature API. The files from March 5th qualify best for answering the research question. The name of the file exactly is: calendar.csv.gz 
 
 ## Holiday API
-Data we can use: There are no dates for cities specific. The holiday API generates lists of public holidays observances for countries, states and provinces. We can select the European countries.
-There is a GitHub community on the holiday API: https://github.com/matbmeijer/HolidayAPI 
-What we can do is to select the regions in which the city is located and use that holiday data. Makes it more interesting and easier. 
+We used the Holiday API and loaded it into R with the help of https://github.com/matbmeijer/HolidayAPI
+
 
 
