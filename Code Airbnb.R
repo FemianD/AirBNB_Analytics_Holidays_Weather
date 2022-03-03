@@ -11,14 +11,22 @@ Grabremote <- function(file_url) {
   return(read.csv(textConnection(txt)))
 }
 
-#Load data
+Cleaning <- function(city) {
+  name <- "city"
+  city <- city %>%
+  group_by(date) %>% 
+  mutate(avg_price = mean(parse_number(price), na.rm=TRUE)) %>% 
+  distinct(date, avg_price, .keep_all = T) %>% 
+  select(date, avg_price) %>% 
+  mutate(date = as.Date(date)) %>%
+  mutate(city = name)
+  europe <- rbind(europe, city)
+}
+
+
+#loading amsterdam
 amsterdam <- Grabremote("http://data.insideairbnb.com/the-netherlands/north-holland/amsterdam/2021-03-04/data/calendar.csv.gz")
-paris <- Grabremote ("http://data.insideairbnb.com/france/ile-de-france/paris/2021-03-04/data/calendar.csv.gz")
+amsterdam <- Cleaning(amsterdam)
 
-combined_data <- bind_rows(list(amsterdam, paris), .id = "id") 
-combined_data <- as.data.frame(combined_data)
+View(europe)
 
-data_datum_price <- combined_data %>%
-  group_by(id, date, price) 
-
-View(data_datum_price)
