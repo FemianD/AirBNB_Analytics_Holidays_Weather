@@ -176,3 +176,5 @@ Cleaning <- function(total_EU_holidays) {
 final_EU_Holiday <- total_EU_holidays %>%
   select(name, date, country)
 
+#Write to csv 
+write.csv(final_EU_Holiday, "Holiday_data_clean.csv")
