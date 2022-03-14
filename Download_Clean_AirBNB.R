@@ -12,6 +12,7 @@ Grabremote <- function(file_url) {
   return(read.csv(textConnection(txt)))
 }
 
+#Clean AirBNB dataframes
 Cleaning <- function(city) {
   city <- city %>%
     group_by(date) %>% 
