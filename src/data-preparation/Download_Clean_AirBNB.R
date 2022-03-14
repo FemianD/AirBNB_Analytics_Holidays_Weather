@@ -52,3 +52,6 @@ rm(Cleaning)
 rm(Grabremote)
 
 print("All European AirBNB data downloaded and cleaned")
+
+#Write to csv 
+write.csv(europe, "AirBNB_data_clean.csv")
