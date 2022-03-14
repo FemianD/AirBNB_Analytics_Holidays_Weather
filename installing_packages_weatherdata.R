@@ -1,0 +1,8 @@
+install.packages("tidyverse") 
+install.packages("riem")
+install.packages("plotly")
+install.packages("ggplot2")
+install.packages("lubridate")
+install.packages("dplyr")
+install.packages("weathermetrics")
+install.packages("date")
