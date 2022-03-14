@@ -164,5 +164,17 @@ class(total_EU_holidays)
 
 knitr::kable(head(total_EU_holidays, 50), row.names = FALSE, caption = "Example of total holidays", format = "markdown")
 
+#cleaning
+Cleaning <- function(total_EU_holidays) {
+  total_EU_holidays <- total_EU_holidays %>%
+    group_by(date) %>%
+    select(name, date ) %>%
+    mutate(date = as.Date(date))
+}
 
+#keeping only necessary colomns
+final_EU_Holiday <- total_EU_holidays %>%
+  select(name, date, country)
 
+#Write to csv 
+write.csv(final_EU_Holiday, "Holiday_data_clean.csv")
