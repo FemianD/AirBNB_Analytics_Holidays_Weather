@@ -1,4 +1,4 @@
-install.packages("tidyverse") # data management
+install.packages("tidyverse") 
 install.packages("riem")
 install.packages("plotly")
 install.packages("ggplot2")
@@ -16,7 +16,7 @@ library(dplyr)
 library(weathermetrics)
 library(date)
 
-#Instructions
+#INSTRUCTIONS
 ## load RIEM Library
 ?riem_networks
 ## Figure out country code 
@@ -114,7 +114,7 @@ rm(dublin, dublintemp)
 
 
 ## Spain, Madrid
-madrid=riem_measures("LEGT")
+madrid=riem_measures("LEMD")
 
 ## Calculating mean
 madridtemp=madrid %>%
@@ -198,7 +198,7 @@ rm(lisbon, lisbontemp)
 
 
 ## Germany, Berlin
-berlin=riem_measures("EDDT")
+berlin=riem_measures("EDDB")
 
 ## Calculating mean
 berlintemp=berlin %>%
@@ -275,7 +275,7 @@ athenstemp$daily_av <- fahrenheit.to.celsius(athenstemp$daily_av)
 ## Setting the date
 class(athenstemp$date)
 athenstemp$date <- as.Date(athenstemp$date)
-athenstemp_new <- athenstemp[b athenstemp$date > "2021-02-28" &
+athenstemp_new <- athenstemp[athenstemp$date > "2021-02-28" &
                                athenstemp$date < "2022-03-02", ] 
 
 rm(athens, athenstemp)
