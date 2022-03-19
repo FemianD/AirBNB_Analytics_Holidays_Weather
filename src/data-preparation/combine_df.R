@@ -1,4 +1,5 @@
 library(dplyr)
+library(haven)
 
 europe_df<-read.csv("gen/temp/europe_prices.csv")
 holiday_df<-read.csv("gen/temp/holiday_data_clean.csv")
@@ -10,4 +11,4 @@ combined_df<-europe_df %>%
 new_cobined_df<-combined_df %>% 
   left_join(weather_df, by = c("date"="date", "city"="city"), suffix = c("_combine", "city_weather"))
 
-write.csv(combined_df, "gen/temp/data_df.csv", row.names = FALSE)
+write.csv(new_cobined_df, "gen/temp/data_df.csv", row.names = FALSE)
