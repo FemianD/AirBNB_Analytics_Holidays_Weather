@@ -23,7 +23,7 @@ Cleaning <- function(city) {
 }
 
 #creating lists
-cities<-c("amsterdam", "athens", "berlin", "brussels", "copenhagen", "dublin", "london", "madrid", "oslo", "prague", "riga", "rome", "stockholm", "vienna")
+cities<-c("amsterdam", "athens", "berlin", "brussels", "copenhagen", "dublin", "london", "madrid", "oslo", "riga", "rome", "stockholm", "vienna")
 urls<-c("http://data.insideairbnb.com/the-netherlands/north-holland/amsterdam/2021-03-04/data/calendar.csv.gz", 
         "http://data.insideairbnb.com/greece/attica/athens/2021-03-20/data/calendar.csv.gz", 
         "http://data.insideairbnb.com/germany/be/berlin/2021-03-12/data/calendar.csv.gz", 
@@ -33,7 +33,6 @@ urls<-c("http://data.insideairbnb.com/the-netherlands/north-holland/amsterdam/20
         "http://data.insideairbnb.com/united-kingdom/england/london/2021-03-05/data/calendar.csv.gz", 
         "http://data.insideairbnb.com/spain/comunidad-de-madrid/madrid/2021-03-07/data/calendar.csv.gz", 
         "http://data.insideairbnb.com/norway/oslo/oslo/2021-03-27/data/calendar.csv.gz", 
-        "http://data.insideairbnb.com/czech-republic/prague/prague/2021-03-13/data/calendar.csv.gz", 
         "http://data.insideairbnb.com/latvia/riga/riga/2021-03-29/data/calendar.csv.gz", 
         "http://data.insideairbnb.com/italy/lazio/rome/2021-03-07/data/calendar.csv.gz", 
         "http://data.insideairbnb.com/sweden/stockholms-l%C3%A4n/stockholm/2021-03-27/data/calendar.csv.gz", 
@@ -65,5 +64,4 @@ rm(Cleaning)
 rm(Grabremote)
 
 write.csv(europe, "gen/temp/europe_prices.csv", row.names = FALSE)
-df_avg_price_europe<-europe
 print("All European AirBNB data downloaded and cleaned")
