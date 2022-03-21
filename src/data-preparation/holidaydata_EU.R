@@ -1,16 +1,29 @@
+<<<<<<< HEAD
+#Loading packages
+library(data.table)
+=======
 #installing github
 install.packages("devtools")
 devtools::install_github("matbmeijer/HolidayAPI")
 
+>>>>>>> be4621e581639d0b2ac01d0a3c0d1bd9b7a23bd2
 library(dplyr)
 library(tidyr)
 library(knitr)
 library(tidyverse)
+<<<<<<< HEAD
+library(HolidayAPI)
+library(data.table)
+save_key(Sys.getenv("holidayapi"))
+
+#get country
+=======
 install.packages("HolidayAPI")
 library(HolidayAPI)
 save_key("39b1f35e-c0ac-44f1-8cfb-3fb3435e27f2")
 
 #get country list
+>>>>>>> be4621e581639d0b2ac01d0a3c0d1bd9b7a23bd2
 countries_df<-get_countries()
 summary(countries_df)
 class(countries_df)
@@ -18,6 +31,40 @@ class(countries_df)
 countries_df<-countries_df %>% as.data.frame()
 class(countries_df)
 
+<<<<<<< HEAD
+#make a lists
+countries <- (c('AT', 'BE', 'BE', 'CZ', 'DE', 'DK', 'ES', 'NL', 'FR', 'GB', 'IE', 'NO', 'GR', 'LV', 'PT', 'SE'))
+counter<-1
+
+#adding city name
+cities <- (c('vienna', 'antwerp', 'brussels', 'prague', 'berlin', 'copenhagen', 'madrid', 'amsterdam', 'paris', 'london', 'dublin', 'oslo', 'athens', 'riga', 'lisbon', 'stockholm'))
+class(cities)
+
+df_lc <- data.frame(countries, cities)
+class(df_lc)
+names(df_lc)[1] <- "country"
+names(df_lc)[2] <- "city"
+
+
+#combining holiday data in once.
+all_holidays = for (country in countries){
+  lapply(countries[counter], get_holidays, year=2021)
+  counter<-counter+1}
+  
+all_holidays = lapply(countries, get_holidays, year=2021)
+
+df_all_holidays = rbindlist(lapply(all_holidays, function(x) data.table(x$holidays)))
+
+class(df_all_holidays)
+
+#joinen van final_all_holidays with df_lc
+
+final_all_holidays <- left_join(df_all_holidays, df_lc, by = NULL)
+
+#cleaning
+Cleaning <- function(final_all_holidays) {
+  final_all_holidays <- final_all_holidays %>%
+=======
 knitr::kable(head(countries_df, 5), row.names = FALSE, caption = "Example of available countries & subdivisions", format = "markdown")
 
 #NL Holiday (Amsterdam)
@@ -167,14 +214,26 @@ knitr::kable(head(total_EU_holidays, 50), row.names = FALSE, caption = "Example 
 #cleaning
 Cleaning <- function(total_EU_holidays) {
   total_EU_holidays <- total_EU_holidays %>%
+>>>>>>> be4621e581639d0b2ac01d0a3c0d1bd9b7a23bd2
     group_by(date) %>%
     select(name, date ) %>%
     mutate(date = as.Date(date))
 }
 
 #keeping only necessary colomns
+<<<<<<< HEAD
+final_EU_holidays <- final_all_holidays %>%
+  select(name, date, city)
+
+#Write to csv
+write.csv(final_EU_holidays, "gen/temp/holiday_data_clean.csv", row.names = FALSE)
+
+
+
+=======
 final_EU_Holiday <- total_EU_holidays %>%
   select(name, date, country)
 
 #Write to csv 
 write.csv(final_EU_Holiday, "Holiday_data_clean.csv")
+>>>>>>> be4621e581639d0b2ac01d0a3c0d1bd9b7a23bd2
