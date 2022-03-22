@@ -12,3 +12,4 @@ new_cobined_df<-combined_df %>%
   left_join(weather_df, by = c("date"="date", "city"="city"), suffix = c("_combine", "city_weather"))
 
 write.csv(new_cobined_df, "gen/temp/data_df.csv", row.names = FALSE)
+
