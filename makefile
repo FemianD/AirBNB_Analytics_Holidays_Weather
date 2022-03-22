@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 all: directory packages gen/temp/holiday_data_clean.csv gen/temp/europe_prices.csv gen/temp/temperature.csv gen/temp/data_df.csv 
 
 packages: install_packages.R
@@ -18,16 +17,4 @@ gen/temp/temperature.csv: src/data-preparation/Weather_code.R directory packages
 
 gen/temp/data_df.csv: gen/temp/holiday_data_clean.csv gen/temp/europe_prices.csv gen/temp/temperature.csv src/data-preparation/combine_df.R directory packages
 	R --vanilla < src/data-preparation/combine_df.R
-=======
-all: europe holidays weather
 
-europe: src/data-preparation/Download_Clean_AirBNB.R
-	R --vanilla < src/data-preparation/Download_Clean_AirBNB.R
-	
-holidays: src/data-preparation/holidaydata_EU.R
-	R --vanilla < src/data-preparation/holidaydata_EU.R
-	
-weather: src/data-preparation/data-preparation/weather_code.R
-	R --vanilla < src/data-preparation/weather_code.R
-
->>>>>>> be4621e581639d0b2ac01d0a3c0d1bd9b7a23bd2
