@@ -18,7 +18,7 @@ temperatures<-data.frame(date=as.Date(character()),
 ## Figure out location code for city etc
 
 
-cities<-c("amsterdam", "paris", "londen", "dublin", "madrid", "rome", "vienna", "lisbon", "berlin", "prague", "brussels", "athens", "copenhagen", "oslo", "stockholm", "riga")
+cities<-c("amsterdam", "paris", "london", "dublin", "madrid", "rome", "vienna", "lisbon", "berlin", "prague", "brussels", "athens", "copenhagen", "oslo", "stockholm", "riga")
 codes<-c("EHAM", "LFPG", "EGLL", "EIDW", "LEMD", "LIRF", "LOWW", "LPPT", "EDDB", "LKPR", "EBBR", "LGAV", "EKCH", "ENGM", "ESSA", "EVRA")
 
 
@@ -32,7 +32,7 @@ for(code in codes){
   temp$daily_av <- fahrenheit.to.celsius(temp$daily_av)
   temp$date<-as.Date(temp$date)
   new_temp<-temp[temp$date > "2021-02-28" &
-                        temp$date < "2022-03-02",]
+                        temp$date < "2022-04-05",]
   new_temp<-new_temp %>% 
     mutate(city=cities[counter])
   temperatures<-rbind(temperatures, new_temp)
