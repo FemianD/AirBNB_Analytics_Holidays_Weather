@@ -15,5 +15,3 @@ combined_df2<-combined_df1 %>%
   mutate(is_holiday = as.numeric(!is.na(combined_df1$name)))
 
 write.csv(combined_df2, "gen/temp/data_df.csv", row.names = FALSE)
-
-View(read.csv("gen/temp/data_df.csv"))
