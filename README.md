@@ -2,11 +2,11 @@
     <img width="60%" src="https://user-images.githubusercontent.com/98605194/156195381-f3ef1ca4-89b7-466b-8ade-43ac2dd746bc.jpeg">
 </p>
 
-## AirBNB pricing: "What the weather? What the holiday?"
+## AirBNB pricing: "What the weather? What the holiday?" :shrug: :v:
 
 
 
-## Research question
+## :question: Research question :question:
 
 To what extent do holidays in European cities and temperature in European cities effect AirBNB prices in European cities and to what extent does the temperature influence the effect of holidays on AirBNB prices? 
 
@@ -29,15 +29,17 @@ The goal of the research is to define the best way to calculate AirBNB prices ba
 To visualize the effect of holidays and temperature on prices, there is a dashboard that shows different statistics. Within this dashboard, users can filter different countries and cities and select temperature levels so check the average airBNB price for certain cities.  
 
 ## Stakeholders
-Users of airBNB can use the information gathered by answering the research to anticipate price flunctuations.
-Tourism sector can track to what extent tourism through airbnb affects prizing. 
-Goverments can track activity of rented airbnb's in the city.
+- Users of airBNB can use the information gathered by answering the research to anticipate price flunctuations.
+- Tourism sector can track to what extent tourism through airbnb affects prizing. 
+- Goverments can track activity of rented airbnb's in the city.
 
 ## Which Inside AirBNB data do we need?
 For every European city we need from Airbnb the calendar data. The dataset contains information about the price, dates and host-id. There will be archived data used, because this will be more relevant with the temperature API. The files from March 5th qualify best for answering the research question. The name of the file exactly is: calendar.csv.gz 
 
-## Holiday API
+## Holiday API :earth_africa: 	
 We used the Holiday API and loaded it into R with the help of [the GitHub page of Mat Meijer](https://github.com/matbmeijer/HolidayAPI)
+
+## Weather API :sun_behind_small_cloud:	
 
 
 
