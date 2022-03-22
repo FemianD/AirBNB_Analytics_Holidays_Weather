@@ -28,7 +28,7 @@ The goal of the research is to define the best way to calculate AirBNB prices ba
 ## Research deployment :mag:
 To visualize the effect of holidays and temperature on prices, there is a dashboard that shows different statistics. Within this dashboard, users can filter different countries and cities and select temperature levels so check the average airBNB price for certain cities.  
 
-## Stakeholders
+## Stakeholders :briefcase:	
 - Users of airBNB can use the information gathered by answering the research to anticipate price flunctuations.
 - Tourism sector can track to what extent tourism through airbnb affects prizing. 
 - Goverments can track activity of rented airbnb's in the city.
@@ -38,11 +38,12 @@ For every European city we need from Airbnb the calendar data. The dataset conta
 
 ## Holiday API :earth_africa: 	
 We used the Holiday API and loaded it into R with the help of [the GitHub page of Mat Meijer](https://github.com/matbmeijer/HolidayAPI)
+To get access to the Holiday API, you can generate a free or premium personal key by fillinf in your email. After this, you can add your save key into R as an environment variable. The free account gives you access to holiday data of the previous year, so in this case 2021. The premium account can give you access to much more data. 
 
 ## Weather API :sun_behind_small_cloud:	
 
 
-## Main results
+## Main results :chart_with_upwards_trend:	
 
 
 
