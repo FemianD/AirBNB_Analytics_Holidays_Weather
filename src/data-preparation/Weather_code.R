@@ -13,14 +13,9 @@ temperatures<-data.frame(date=as.Date(character()),
                          city=character(), 
                          stringsAsFactors=FALSE)
 
-## Figure out country code 
-##"NL_ASOS" = Netherlands
-## Figure out location code for city etc
-
-
-cities<-c("amsterdam", "paris", "london", "dublin", "madrid", "rome", "vienna", "lisbon", "berlin", "prague", "brussels", "athens", "copenhagen", "oslo", "stockholm", "riga")
-codes<-c("EHAM", "LFPG", "EGLL", "EIDW", "LEMD", "LIRF", "LOWW", "LPPT", "EDDB", "LKPR", "EBBR", "LGAV", "EKCH", "ENGM", "ESSA", "EVRA")
-
+#creating lists
+cities<-c("amsterdam", "dublin", "madrid", "rome", "vienna", "berlin", "brussels", "athens")
+codes<-c("EHAM", "EIDW", "LEMD", "LIRF", "LOWW", "EDDB", "LKPR", "LGAV")
 
 ## France, Paris
 for(code in codes){
@@ -39,6 +34,7 @@ for(code in codes){
   print(paste("downloaded temperatures of", cities[counter]))
   counter<-counter+1
 }
+head(temperatures)
 
 write.csv(temperatures, "gen/temp/temperature.csv", row.names = FALSE)
 print("All European temperature data downloaded and cleaned")
