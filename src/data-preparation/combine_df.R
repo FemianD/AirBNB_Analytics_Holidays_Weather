@@ -8,8 +8,11 @@ weather_df<-read.csv("gen/temp/temperature.csv")
 combined_df<-europe_df %>% 
   left_join(holiday_df, by = c("date"="date", "city"="city"), suffix = c("_europe", "_holiday"))
 
-new_cobined_df<-combined_df %>% 
-  left_join(weather_df, by = c("date"="date", "city"="city"), suffix = c("_combine", "city_weather"))
+combined_df1<-combined_df %>% 
+  left_join(weather_df, by = c("date"="date", "city"="city"), suffix = c("_combine", "city_weather")) %>% 
+  mutate(is_holiday = as.numeric(!is.na(name))) %>% 
+  select(-name)
 
-write.csv(new_cobined_df, "gen/temp/data_df.csv", row.names = FALSE)
+head(combined_df1)
 
+write.csv(combined_df1, "gen/temp/data_df.csv", row.names = FALSE)
