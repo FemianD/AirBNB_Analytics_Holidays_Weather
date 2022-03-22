@@ -42,4 +42,7 @@ We used the Holiday API and loaded it into R with the help of [the GitHub page o
 ## Weather API :sun_behind_small_cloud:	
 
 
+## Main results
+
+
 
