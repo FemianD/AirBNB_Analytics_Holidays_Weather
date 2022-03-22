@@ -38,7 +38,7 @@ For every European city we need from Airbnb the calendar data. The dataset conta
 
 ## Holiday API :earth_africa: 	
 We used the Holiday API and loaded it into R with the help of [the GitHub page of Mat Meijer](https://github.com/matbmeijer/HolidayAPI)
-To get access to the Holiday API, you can generate a free or premium personal key by fillinf in your email. After this, you can add your save key into R as an environment variable. The free account gives you access to holiday data of the previous year, so in this case 2021. The premium account can give you access to much more data. 
+To get access to the Holiday API, you can generate a free or premium personal key by filling in your email. After this, you can add your save key into R as an environment variable. The free account gives you access to holiday data of the previous year, so in this case 2021. The premium account can give you access to much more data. 
 
 ## Weather API :sun_behind_small_cloud:	
 
