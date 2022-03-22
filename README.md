@@ -46,7 +46,7 @@ The riem package from the [GitHub page: ropensci/riem](https://github.com/ropens
 ``` r
 install.packages("riem")
 ```
-To view and search the data
+To view and search the data:
 ``` r
 ## Figure out country code 
 view(riem_networks())
