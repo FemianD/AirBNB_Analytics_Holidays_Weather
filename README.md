@@ -1,4 +1,5 @@
-## AirBNB pricing: "What the weather? What the holiday?" :shrug: :v:
+<h1 align="center"> AirBNB pricing: "What the weather? What the holiday?" :shrug: :v:</h1>
+
 <p align="center" width="100%">
     <img width="60%" src="https://user-images.githubusercontent.com/98605194/156195381-f3ef1ca4-89b7-466b-8ade-43ac2dd746bc.jpeg">
 </p>
