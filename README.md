@@ -59,5 +59,15 @@ When the countrycode and citycode are identified, the weatherdata can be viewed 
 
 ## Main results :chart_with_upwards_trend:	
 
+## About :information_source:	
+A group of five students from the Tilburg University have contributed to this repository. This project was part of the class Data Preperation & Workflow Management for the masters Marketing Analytics. 
+
+:man_student: Femian Dooms
+:man_student: Wouter Krooshof
+:man_student: Mike Lammertink 
+:man_student: Jesse van Lier
+:woman_student: Isabel Smittenaar 
+
+
 
 
