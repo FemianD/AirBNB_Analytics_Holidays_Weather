@@ -35,8 +35,17 @@ To visualize the effect of holidays and temperature on prices, there is a dashbo
 For every European city we need from Airbnb the calendar data. The dataset contains information about the price, dates and host-id. There will be archived data used, because this will be more relevant with the temperature API. The files from March 5th qualify best for answering the research question. The name of the file exactly is: calendar.csv.gz 
 
 ## Holiday API :earth_africa: 	
-We used the Holiday API and loaded it into R with the help of [the GitHub page of Mat Meijer](https://github.com/matbmeijer/HolidayAPI)
-To get access to the Holiday API, you can generate a free or premium personal key by filling in your email. After this, you can add your save key into R as an environment variable. The free account gives you access to holiday data of the previous year, so in this case 2021. The premium account can give you access to much more data. 
+We used the Holiday API and loaded it into R with the help of [the GitHub page of Mat Meijer.](https://github.com/matbmeijer/HolidayAPI)
+To get access to the [Holiday API](https://holidayapi.com/), you can generate a free or premium personal key by filling in your email or you could sign up through your GithHub account. The free account gives you access to holiday data of the previous year, so in this case 2021. The premium account can give you access to much more data. 
+
+After you have generated your API save key, the following steps need to be taken:
+``` r
+install.packages("devtools")
+devtools::install_github("matbmeijer/HolidayAPI")
+install.packages("HolidayAPI")
+```
+**Note**: You should **never** share your personal save key so make use of ```Sys.getenv```. 
+
 
 ## Weather API :sun_behind_small_cloud:	
 The riem package from the [GitHub page: ropensci/riem](https://github.com/ropensci/riem) was used to collect historical weather data for European capital cities. The riem package contains all of the ASOS station weather data. These stations are located at airports across the globe and collect the data via the [Iowa Environment Mesonet](https://mesonet.agron.iastate.edu/request/download.phtml). The following steps need te be taken to use the riem package:
