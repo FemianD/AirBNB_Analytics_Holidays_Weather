@@ -4,7 +4,10 @@
     <img width="60%" src="https://user-images.githubusercontent.com/98605194/156195381-f3ef1ca4-89b7-466b-8ade-43ac2dd746bc.jpeg">
 </p>
 
-## :question: Research question :question:
+## Research Motivation 
+Do you have the same problem as we do? We as students are stuck with days off in high season given by the university which leads to paying higher prices for our AirBnB's. At least, we have the feeling that the prices of AirBnB accomodations in European cities drastically increases once there is a holiday around the corner. Next to this, we are interested in researching whether weather circumstances play a role in the price changes of AirBnB. This leads to the following research question below. 
+
+### :question: Research question :question: 
 
 To what extent do holidays in European cities and temperature in European cities effect AirBNB prices in European cities and to what extent does the temperature influence the effect of holidays on AirBNB prices? 
 
@@ -22,6 +25,7 @@ Multiple regression is an appropriate method of analysis when the research probl
 
 The goal of the research is to define the best way to calculate AirBNB prices based on holidays and temperature. To define the price, data is collected in 2 different stages. First the primary data from Inside AirBNB is used to calculate prices during a period. Secondly data is coupled with secondary data to analyse the findings and answer the research question.
 
+## Set up of the repository 
 
 ## Research deployment :mag:
 To visualize the effect of holidays and temperature on prices, there is a dashboard that shows different statistics. Within this dashboard, users can filter different countries and cities and select temperature levels so check the average airBNB price for certain cities.  
