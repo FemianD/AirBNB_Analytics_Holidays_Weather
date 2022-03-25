@@ -13,8 +13,8 @@ temperatures<-data.frame(date=as.Date(character()),
                          city=character(), 
                          stringsAsFactors=FALSE)
 
-cities<-c("amsterdam", "dublin", "madrid", "rome", "vienna", "berlin", "brussels", "athens")
-codes<-c("EHAM", "EIDW", "LEMD", "LIRF", "LOWW", "EDDB", "LKPR", "LGAV")
+cities<-c("amsterdam", "paris", "dublin", "madrid", "rome", "vienna", "berlin", "brussels", "athens", "lisbon")
+codes<-c("EHAM", "LFPG", "EIDW", "LEMD", "LIRF", "LOWW", "EDDB", "LKPR", "LGAV", "LPPT")
 
 
 #cleaning raw data to 3 variables
@@ -42,7 +42,6 @@ for(code in codes){
 }
 
 #write data file
-
 head(temperatures)
 
 write.csv(temperatures, "gen/temp/temperature.csv", row.names = FALSE)

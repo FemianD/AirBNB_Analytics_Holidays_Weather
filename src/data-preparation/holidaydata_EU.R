@@ -18,8 +18,8 @@ countries_df<-countries_df %>% as.data.frame()
 class(countries_df)
 
 #Setting variables
-countries <- c('AT','IT', 'BE', 'DE', 'ES', 'NL', 'IE', 'GR')
-cities <- c('vienna', 'rome', 'brussels', 'berlin', 'madrid', 'amsterdam', 'dublin', 'athens')
+countries <- c('AT','IT', 'BE', 'DE', 'ES', 'NL', 'IE', 'GR', 'FR', 'PT')
+cities <- c('vienna', 'rome', 'brussels', 'berlin', 'madrid', 'amsterdam', 'dublin', 'athens', 'paris', 'lisbon')
 counter<-1
 
 df_lc <- data.frame(countries, cities)
