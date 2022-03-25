@@ -13,9 +13,9 @@ temperatures<-data.frame(date=as.Date(character()),
                          city=character(), 
                          stringsAsFactors=FALSE)
 
+
 cities<-c("amsterdam", "paris", "dublin", "madrid", "rome", "vienna", "berlin", "brussels", "athens", "lisbon")
 codes<-c("EHAM", "LFPG", "EIDW", "LEMD", "LIRF", "LOWW", "EDDB", "LKPR", "LGAV", "LPPT")
-
 
 #cleaning raw data to 3 variables
 cleaning<-function(tempr){

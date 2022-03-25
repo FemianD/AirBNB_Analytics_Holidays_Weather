@@ -1,12 +1,13 @@
+<h1 align="center"> AirBNB pricing: "What the weather? What the holiday?" :shrug: :v:</h1>
+
 <p align="center" width="100%">
     <img width="60%" src="https://user-images.githubusercontent.com/98605194/156195381-f3ef1ca4-89b7-466b-8ade-43ac2dd746bc.jpeg">
 </p>
 
-## AirBNB pricing: "What the weather? What the holiday?" :shrug: :v:
+## Research Motivation 
+Do you have the same problem as we do? We as students are stuck with days off in high season given by the university which leads to paying higher prices for our AirBnB's. At least, we have the feeling that the prices of AirBnB accomodations in European cities drastically increases once there is a holiday around the corner. Next to this, we are interested in researching whether weather circumstances play a role in the price changes of AirBnB. This leads to the following research question below. 
 
-
-
-## :question: Research question :question:
+### :question: Research question :question: 
 
 To what extent do holidays in European cities and temperature in European cities effect AirBNB prices in European cities and to what extent does the temperature influence the effect of holidays on AirBNB prices? 
 
@@ -24,6 +25,7 @@ Multiple regression is an appropriate method of analysis when the research probl
 
 The goal of the research is to define the best way to calculate AirBNB prices based on holidays and temperature. To define the price, data is collected in 2 different stages. First the primary data from Inside AirBNB is used to calculate prices during a period. Secondly data is coupled with secondary data to analyse the findings and answer the research question.
 
+## Set up of the repository 
 
 ## Research deployment :mag:
 To visualize the effect of holidays and temperature on prices, there is a dashboard that shows different statistics. Within this dashboard, users can filter different countries and cities and select temperature levels so check the average airBNB price for certain cities.  
@@ -36,11 +38,43 @@ To visualize the effect of holidays and temperature on prices, there is a dashbo
 ## Which Inside AirBNB data do we need?
 For every European city we need from Airbnb the calendar data. The dataset contains information about the price, dates and host-id. There will be archived data used, because this will be more relevant with the temperature API. The files from March 5th qualify best for answering the research question. The name of the file exactly is: calendar.csv.gz 
 
-## Holiday API :earth_africa: 	
-We used the Holiday API and loaded it into R with the help of [the GitHub page of Mat Meijer](https://github.com/matbmeijer/HolidayAPI)
-To get access to the Holiday API, you can generate a free or premium personal key by filling in your email. After this, you can add your save key into R as an environment variable. The free account gives you access to holiday data of the previous year, so in this case 2021. The premium account can give you access to much more data. 
+## Instructions :information_source:
+### 1. Packages to download 
+Within R, the following packages have been used in total within various codes:
+``` r
+install.packages("date")
+install.packages("data.table")
+install.packages("dplyr")
+install.packages("ggplot2")
+install.packages("haven")
+devtools::install_github("matbmeijer/HolidayAPI")
+install.packages("HolidayAPI")
+install.packages("knitr")
+install.packages("lubridate")
+install.packages("plotly")
+install.packages("riem")
+install.packages("sjlabelled")
+install.packages("sjmisc")
+install.packages("sjPlot")
+install.packages("tidyr")
+install.packages("tidyverse")
+install.packages("weathermetrics")
 
-## Weather API :sun_behind_small_cloud:	
+```
+### 2. Holiday API :earth_africa: 	
+We used the Holiday API and loaded it into R with the help of [the GitHub page of Mat Meijer.](https://github.com/matbmeijer/HolidayAPI)
+To get access to the [Holiday API](https://holidayapi.com/), you can generate a free or premium personal key by filling in your email or you could sign up through your GithHub account. The free account gives you access to holiday data of the previous year, so in this case 2021. The premium account can give you access to much more data. 
+
+After you have generated your API save key, the following steps need to be taken:
+``` r
+install.packages("devtools")
+devtools::install_github("matbmeijer/HolidayAPI")
+install.packages("HolidayAPI")
+```
+**Note**: You should **never** share your personal save key so make use of ```Sys.getenv```. 
+
+
+### 3. Weather API :sun_behind_small_cloud:	
 The riem package from the [GitHub page: ropensci/riem](https://github.com/ropensci/riem) was used to collect historical weather data for European capital cities. The riem package contains all of the ASOS station weather data. These stations are located at airports across the globe and collect the data via the [Iowa Environment Mesonet](https://mesonet.agron.iastate.edu/request/download.phtml). The following steps need te be taken to use the riem package:
 
 ``` r
@@ -58,6 +92,12 @@ view(riem_stations("countrycode__citycode"))
 When the countrycode and citycode are identified, the weatherdata can be viewed and analyzed according to the user's interests.
 
 ## Main results :chart_with_upwards_trend:	
+The final output obtained via regression:
 
+<p align="center" width="100%">
+    <img width="50%" src="https://user-images.githubusercontent.com/98945883/160124972-0002ce57-6516-4495-88cb-97ce8e3f037a.jpeg">
+</p>
 
-
+- 1.9% of the variance in the average prices of AirBNB listings is explained by this model.
+- The low R-squared questions the usability of the model.
+- Based on regression, it is difficult to say whether the temperature (daily av) and the holidays (is holiday) hava a direct influence on the avarage AirBNB listing prices. 

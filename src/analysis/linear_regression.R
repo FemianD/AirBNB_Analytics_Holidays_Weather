@@ -26,6 +26,7 @@ regression_lm <- lm(avg_price ~ daily_av+ as.factor(is_holiday), data = regressi
 tab_model(regression_lm)
 summary(regression_lm)
 
-#checking multicollinearity 
 vif(regression_lm)
+
+
   
