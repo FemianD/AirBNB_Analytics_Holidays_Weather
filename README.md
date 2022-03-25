@@ -77,6 +77,6 @@ The final output obtained via regression:
     <img width="50%" src="https://user-images.githubusercontent.com/98945883/160124972-0002ce57-6516-4495-88cb-97ce8e3f037a.jpeg">
 </p>
 
-- 1.9% of the variance in the average price of an AirBNB listeing is explained by this model.
+- 1.9% of the variance in the average prices of AirBNB listings is explained by this model.
 - The low R-squared questions the usability of the model.
 - Based on regression, it is difficult to say whether the temperature (daily av) and the holidays (is holiday) hava a direct influence on the avarage AirBNB listing prices. 
