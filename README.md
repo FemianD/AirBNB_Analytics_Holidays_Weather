@@ -40,6 +40,27 @@ For every European city we need from Airbnb the calendar data. The dataset conta
 
 ## Instructions :information_source:
 ### 1. Packages to download 
+Within R, the following packages have been used in total within various codes:
+``` r
+install.packages("date")
+install.packages("data.table")
+install.packages("dplyr")
+install.packages("ggplot2")
+install.packages("haven")
+devtools::install_github("matbmeijer/HolidayAPI")
+install.packages("HolidayAPI")
+install.packages("knitr")
+install.packages("lubridate")
+install.packages("plotly")
+install.packages("riem")
+install.packages("sjlabelled")
+install.packages("sjmisc")
+install.packages("sjPlot")
+install.packages("tidyr")
+install.packages("tidyverse")
+install.packages("weathermetrics")
+
+```
 ### 2. Holiday API :earth_africa: 	
 We used the Holiday API and loaded it into R with the help of [the GitHub page of Mat Meijer.](https://github.com/matbmeijer/HolidayAPI)
 To get access to the [Holiday API](https://holidayapi.com/), you can generate a free or premium personal key by filling in your email or you could sign up through your GithHub account. The free account gives you access to holiday data of the previous year, so in this case 2021. The premium account can give you access to much more data. 
