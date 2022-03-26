@@ -24,7 +24,7 @@ cleaning <- function(city) {
 
 #creating lists
 cities<-c("amsterdam", "athens", "berlin", "brussels", "dublin", "madrid",  "rome", "vienna", "paris", "lisbon")
-urls<-curls<-c(urls<-c("https://github.com/BlauweOehoe/Download_files_Abnb/raw/main/Amsterdam_calendar.csv.gz", 
+urls<-c("https://github.com/BlauweOehoe/Download_files_Abnb/raw/main/Amsterdam_calendar.csv.gz", 
         "https://github.com/BlauweOehoe/Download_files_Abnb/raw/main/Athens_calendar.csv.gz",
         "https://github.com/BlauweOehoe/Download_files_Abnb/raw/main/Berlin_calendar.csv.gz", 
         "https://github.com/BlauweOehoe/Download_files_Abnb/raw/main/Brussels_calendar.csv.gz", 
