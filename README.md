@@ -25,8 +25,6 @@ Multiple regression is an appropriate method of analysis when the research probl
 
 The goal of the research is to define the best way to calculate AirBNB prices based on holidays and temperature. To define the price, data is collected in 2 different stages. First the primary data from Inside AirBNB is used to calculate prices during a period. Secondly data is coupled with secondary data to analyse the findings and answer the research question.
 
-## Set up of the repository 
-
 ## Research deployment :mag:
 To visualize the effect of holidays and temperature on prices, there is a dashboard that shows different statistics. Within this dashboard, users can filter different countries and cities and select temperature levels so check the average airBNB price for certain cities.  
 
@@ -65,13 +63,15 @@ install.packages("weathermetrics")
 We used the Holiday API and loaded it into R with the help of [the GitHub page of Mat Meijer.](https://github.com/matbmeijer/HolidayAPI)
 To get access to the [Holiday API](https://holidayapi.com/), you can generate a free or premium personal key by filling in your email or you could sign up through your GithHub account. The free account gives you access to holiday data of the previous year, so in this case 2021. The premium account can give you access to much more data. 
 
-After you have generated your API save key, the following steps need to be taken:
-``` r
-install.packages("devtools")
-devtools::install_github("matbmeijer/HolidayAPI")
-install.packages("HolidayAPI")
-```
+After you have installed the above packages you can generate your API save key. 
 **Note**: You should **never** share your personal save key so make use of ```Sys.getenv```. 
+
+To get an dataframe of the countries and holidays, the following steps need to be taken:
+``` r
+countries_df<-get_countries()
+holidays_df <- get_holidays(country = , year=2021)
+```
+**Note**: The ```View()``` function breaks once the ```HolidayAPI``` package is loaded.
 
 
 ### 3. Weather API :sun_behind_small_cloud:	

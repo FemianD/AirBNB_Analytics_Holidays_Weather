@@ -32,10 +32,10 @@ code <- gsub('^library$', '', code)
 uniq_packages <- unique(code)
 
 # kick out "empty" package names
-uniq_packages <- uniq_packages[!uniq_packages == ''] 
+uniq_packages <- uniq_packages[!uniq_packages == '']
 
 # order alphabetically
-uniq_packages <- uniq_packages[order(uniq_packages)] 
+uniq_packages <- uniq_packages[order(uniq_packages)]
 
 cat('Required packages: \n')
 cat(paste0(uniq_packages, collapse= ', '),fill=T)

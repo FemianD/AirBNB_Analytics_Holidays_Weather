@@ -35,6 +35,7 @@ urls<-c("https://github.com/BlauweOehoe/Download_files_Abnb/raw/main/Amsterdam_c
         "https://github.com/BlauweOehoe/Download_files_Abnb/raw/main/Paris_calendar.csv.gz",
         "https://github.com/BlauweOehoe/Download_files_Abnb/raw/main/Lisbon_calendar.csv.gz")
 
+
 #setting parameter variables
 counter<-1
 europe <- data.frame(date=as.Date(character()),
