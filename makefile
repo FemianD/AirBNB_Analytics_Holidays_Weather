@@ -1,4 +1,4 @@
-linear_regression: gen/temp/data_df.csv packages directory
+linear_regression: packages directory gen/temp/data_df.csv  
 	R --vanilla < src/analysis/linear_regression.R
 	
 packages: install_packages.R
