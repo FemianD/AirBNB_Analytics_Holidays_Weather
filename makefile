@@ -1,19 +1,19 @@
-linear_regression: packages directory gen/temp/data_df.csv  
-	R --vanilla < src/analysis/linear_regression.R
+linear_regression: packages directory gen/temp/data_df.csv src/paper/linear_regression.R
+	R --vanilla < src/paper/linear_regression.R
 	
 packages: install_packages.R
 	R --vanilla < install_packages.R	
 
-gen/temp/data_df.csv: gen/temp/holiday_data_clean.csv gen/temp/europe_prices.csv gen/temp/temperature.csv src/data-preparation/combine_df.R packages
-	R --vanilla < src/data-preparation/combine_df.R
-	
 directory: src/data-preparation/file_directory.R packages
 	R --vanilla < src/data-preparation/file_directory.R
 
-gen/temp/holiday_data_clean.csv: src/data-preparation/holidaydata_eu.R directory packages
+gen/temp/data_df.csv: packages gen/temp/holiday_data_clean.csv gen/temp/europe_prices.csv gen/temp/temperature.csv src/analysis/combine_df.R 
+	R --vanilla < src/analysis/combine_df.R
+
+gen/temp/holiday_data_clean.csv: directory packages src/data-preparation/holidaydata_eu.R 
 	R --vanilla < src/data-preparation/holidaydata_eu.R
 
-gen/temp/europe_prices.csv: src/data-preparation/download_clean_airbnb.R directory packages
+gen/temp/europe_prices.csv: directory packages src/data-preparation/download_clean_airbnb.R 
 	R --vanilla < src/data-preparation/download_clean_airbnb.R
 	
 gen/temp/temperature.csv: src/data-preparation/weather_code.R directory packages
