@@ -1,15 +1,16 @@
 ---
 title: "Linear_regression"
+Authors: "Team 4: Mike Lammertink, Femian Dooms, Isabel Smittenaar, Wouter Krooshof, Jesse van Lier"
 output: pdf_document
 ---
 
 # Regression
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-tinytex::install_tinytex()
 library(tinytex)
 library(rmarkdown)
 library(haven)
+library(readr)
 library(dplyr)
 library(car)
 library(ggplot2)
@@ -19,13 +20,15 @@ library(sjlabelled)
 ```
 
 ## Get data
+### here we load the regression dataset and show the first five lines
 ```{r open file}
 regression <- read.csv("../../gen/temp/data_df.csv")
+head(regression)
 ```
 ## Check for normality
 Here we check whether the data is normally distributed.
 
-```{r normality, echo=FALSE}
+```{r normality, echo=FALSE, warning=FALSE}
 ggplot(regression, aes(avg_price))+ geom_histogram(bins=50)
 
 ggplot(regression, aes(daily_av))+ geom_histogram(bins=50)
@@ -34,7 +37,7 @@ ggplot(regression, aes(daily_av))+ geom_histogram(bins=50)
 ## Check for linearity
 Here we check if the data is linear.
 
-```{r linearity, echo=FALSE}
+```{r linearity, echo=FALSE, warning=FALSE}
 ggplot(regression, aes(x=daily_av, y=avg_price))+ geom_point()
 
 ggplot(regression, aes(x=is_holiday, y=avg_price))+ geom_point()
@@ -43,7 +46,7 @@ ggplot(regression, aes(x=is_holiday, y=avg_price))+ geom_point()
 ## Linear Regresssion
 The final output obtained via regression:
 
-```{r regression, echo=FALSE}
+```{r regression, echo=FALSE, message=FALSE, warning=FALSE}
 regression_lm <- lm(avg_price ~ daily_av+ as.factor(is_holiday), data = regression);
 summary(regression_lm)
 

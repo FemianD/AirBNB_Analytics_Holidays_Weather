@@ -44,6 +44,6 @@ for(code in codes){
 #write data file
 head(temperatures)
 
-write.csv(temperatures, "gen/temp/temperature.csv", row.names = FALSE)
+write.csv(temperatures, "../../gen/temp/temperature.csv", row.names = FALSE)
 print("All European temperature data downloaded and cleaned")
   

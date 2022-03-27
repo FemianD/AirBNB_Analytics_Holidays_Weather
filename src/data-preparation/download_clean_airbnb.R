@@ -57,5 +57,5 @@ head(europe)
 
 
 #cleaning up outputs
-write.csv(europe, "gen/temp/europe_prices.csv", row.names = FALSE)
+write.csv(europe, "../../gen/temp/europe_prices.csv", row.names = FALSE)
 print("All European AirBNB data downloaded and cleaned")

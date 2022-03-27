@@ -60,4 +60,4 @@ final_EU_holidays <- final_all_holidays %>%
 head(final_EU_holidays)
 
 #Write to csv
-write.csv(final_EU_holidays, "gen/temp/holiday_data_clean.csv", row.names = FALSE)
+write.csv(final_EU_holidays, "../../gen/temp/holiday_data_clean.csv", row.names = FALSE)
