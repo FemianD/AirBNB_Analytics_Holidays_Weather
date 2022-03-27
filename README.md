@@ -26,7 +26,7 @@ Multiple regression is an appropriate method of analysis when the research probl
 The goal of the research is to define the best way to calculate AirBNB prices based on holidays and temperature. To define the price, data is collected in 2 different stages. First the primary data from Inside AirBNB is used to calculate prices during a period. Secondly data is coupled with secondary data to analyse the findings and answer the research question.
 
 ## Research deployment :mag:
-After running the analysis, a PDF file will be create to visualize the effect of holidays and temperature on prices. 
+After running the analysis, a PDF file will be create to visualize the effect of holidays and temperature on prices. This is done by various plots and the output of the linear regression.
 
 ## Stakeholders :briefcase:	
 - Users of airBNB can use the information gathered by answering the research to anticipate price flunctuations.
