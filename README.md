@@ -77,7 +77,7 @@ To get an dataframe of the countries and holidays, the following steps need to b
 countries_df<-get_countries()
 holidays_df <- get_holidays(country = , year=2021)
 ```
-**Note**: The ```View()``` function breaks once the ```HolidayAPI``` package is loaded.
+**Good to know**: The ```View()``` function breaks once the ```HolidayAPI``` package is loaded.
 
 
 ### 3. Weather API :sun_behind_small_cloud:	
