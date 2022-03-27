@@ -78,9 +78,6 @@ holidays_df <- get_holidays(country = , year=2021)
 ### 3. Weather API :sun_behind_small_cloud:	
 The riem package from the [GitHub page: ropensci/riem](https://github.com/ropensci/riem) was used to collect historical weather data for European capital cities. The riem package contains all of the ASOS station weather data. These stations are located at airports across the globe and collect the data via the [Iowa Environment Mesonet](https://mesonet.agron.iastate.edu/request/download.phtml). The following steps need te be taken to use the riem package:
 
-### 4. Downloading AirBNB files
-Pricing data from the different days throughout a period of a year are downloaded from http://insideairbnb.com/get-the-data.html. The website contains variaous types of data about the AirBNB places. 
-
 ``` r
 install.packages("riem")
 ```
@@ -94,6 +91,9 @@ view(riem_networks())
 view(riem_stations("countrycode__citycode"))
 ```
 When the countrycode and citycode are identified, the weatherdata can be viewed and analyzed according to the user's interests.
+
+### 4. Downloading AirBNB files
+Pricing data from the different days throughout a period of a year are downloaded from http://insideairbnb.com/get-the-data.html. The website contains variaous types of data about the AirBNB places. 
 
 ## Main results :chart_with_upwards_trend:	
 The final output obtained via regression:
