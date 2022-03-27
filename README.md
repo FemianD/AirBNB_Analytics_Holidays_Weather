@@ -9,7 +9,7 @@ Do you have the same problem as we do? We as students are stuck with days off in
 
 ### :question: Research question :question: 
 
-To what extent do holidays in European cities and temperature in European cities effect AirBNB prices in European cities and to what extent does the temperature influence the effect of holidays on AirBNB prices? 
+To what extent do holidays in European cities, which use and temperature in European cities effect AirBNB prices in European cities which use the euro and to what extent does the temperature influence the effect of holidays on AirBNB prices? 
 
 
 ## Conceptual model
@@ -57,6 +57,7 @@ install.packages("sjPlot")
 install.packages("tidyr")
 install.packages("tidyverse")
 install.packages("weathermetrics")
+install.packages("tinytex")
 
 ```
 ### 2. Holiday API :earth_africa: 	
@@ -76,6 +77,9 @@ holidays_df <- get_holidays(country = , year=2021)
 
 ### 3. Weather API :sun_behind_small_cloud:	
 The riem package from the [GitHub page: ropensci/riem](https://github.com/ropensci/riem) was used to collect historical weather data for European capital cities. The riem package contains all of the ASOS station weather data. These stations are located at airports across the globe and collect the data via the [Iowa Environment Mesonet](https://mesonet.agron.iastate.edu/request/download.phtml). The following steps need te be taken to use the riem package:
+
+### 4. Downloading AirBNB files
+Pricing data from the different days throughout a period of a year are downloaded from http://insideairbnb.com/get-the-data.html. The website contains variaous types of data about the AirBNB places. 
 
 ``` r
 install.packages("riem")
