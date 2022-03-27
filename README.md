@@ -42,8 +42,8 @@ For every European city we need from Airbnb the calendar data. The dataset conta
 - Step 3: You open the Command Prompt (Windows) or Terminal (Mac), move to the folder "AirBNB_Analytics_Holidays_Weather" and set this as the working directory and run "make". 
 - Step 4: Rmarkdown will not be generated via make. To accomplish this, go to src/paper/linear_regression.Rmd and knit the file with knit directory as document directory
 
-after this, the plots can be found in gen/output 
-the markdown file can be found in src/paper
+After this, the plots can be found in gen/output 
+The markdown file can be found in src/paper
 
 ## Package instructions :information_source:
 ### 1. Packages to download 
