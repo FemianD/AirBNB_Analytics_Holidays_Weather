@@ -43,7 +43,6 @@ For every European city we need from Airbnb the calendar data. The dataset conta
 - Step 4: Rmarkdown will not be generated via make. To accomplish this, go to src/paper/linear_regression.Rmd and knit the file with knit directory as document directory
 
 After this, the plots can be found in gen/output.
-
 The markdown file can be found in src/paper
 
 ## Package instructions :information_source:
