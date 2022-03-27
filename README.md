@@ -38,7 +38,7 @@ For every European city we need from Airbnb the calendar data. The dataset conta
 
 
 ##Running instructions
-This repository contains a complete pipeline of data-preparation, data analysis, writing paper/markdown. Therefore, as a first step make sure you've cloned the repository onto your own laptop/pc. The complete pipeline is automated using makefiles. To run this pipeline, you first need to have the HolidayAPI savekey, see package instructions 2. Also you need to have installed make (for an installation guide see: https://tilburgsciencehub.com/building-blocks/configure-your-computer/automation-and-workflows/make/). Hereafter you open the Command Prompt (Windows) or Terminal (Mac), move to the folder "AirBNB_Analytics_Holidays_Weather" and set this as the working directory and run "make". 
+This repository contains a complete pipeline of data-preparation, data analysis, writing paper/markdown. Therefore, as a first step make sure you've cloned the repository onto your own laptop/pc. The complete pipeline is automated using makefiles. To run this pipeline, you first need to have the HolidayAPI savekey, see package instructions 2. Also you need to have installed make (for an installation guide see: [the installation guide for make](https://tilburgsciencehub.com/building-blocks/configure-your-computer/automation-and-workflows/make/). Hereafter you open the Command Prompt (Windows) or Terminal (Mac), move to the folder "AirBNB_Analytics_Holidays_Weather" and set this as the working directory and run "make". 
 
 ## Package instructions :information_source:
 ### 1. Packages to download 
